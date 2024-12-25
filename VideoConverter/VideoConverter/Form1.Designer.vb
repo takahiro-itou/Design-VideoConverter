@@ -22,10 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        VideoConfig1 = New WinFormsControl.VideoConfig()
+        SuspendLayout()
+        ' 
+        ' VideoConfig1
+        ' 
+        VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        VideoConfig1.Location = New Point(12, 12)
+        VideoConfig1.Name = "VideoConfig1"
+        VideoConfig1.Size = New Size(707, 360)
+        VideoConfig1.TabIndex = 0
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 570)
+        Controls.Add(VideoConfig1)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents VideoConfig1 As WinFormsControl.VideoConfig
 
 End Class
