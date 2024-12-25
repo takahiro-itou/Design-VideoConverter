@@ -28,9 +28,11 @@ Partial Class Form1
         ' VideoConfig1
         ' 
         VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        VideoConfig1.Location = New Point(12, 12)
+        VideoConfig1.Location = New Point(27, 25)
+        VideoConfig1.MaximumSize = New Size(0, 119)
+        VideoConfig1.MinimumSize = New Size(545, 119)
         VideoConfig1.Name = "VideoConfig1"
-        VideoConfig1.Size = New Size(547, 118)
+        VideoConfig1.Size = New Size(545, 119)
         VideoConfig1.TabIndex = 0
         ' 
         ' Form1
