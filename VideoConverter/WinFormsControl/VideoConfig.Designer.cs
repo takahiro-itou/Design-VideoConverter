@@ -1,6 +1,6 @@
 ﻿namespace WinFormsControl
 {
-    partial class UserControl1
+    partial class VideoConfig
     {
         /// <summary>
         /// Required designer variable.

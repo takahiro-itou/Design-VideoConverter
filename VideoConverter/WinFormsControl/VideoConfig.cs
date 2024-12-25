@@ -1,8 +1,8 @@
 ﻿namespace WinFormsControl
 {
-    public partial class UserControl1 : UserControl
+    public partial class VideoConfig : UserControl
     {
-        public UserControl1()
+        public VideoConfig()
         {
             InitializeComponent();
         }
