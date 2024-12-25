@@ -28,11 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideoConfig));
+            fraVideConfig = new GroupBox();
+            SuspendLayout();
+            // 
+            // fraVideConfig
+            // 
+            resources.ApplyResources(fraVideConfig, "fraVideConfig");
+            fraVideConfig.Name = "fraVideConfig";
+            fraVideConfig.TabStop = false;
+            // 
+            // VideoConfig
+            // 
+            AutoScaleMode = AutoScaleMode.None;
+            Controls.Add(fraVideConfig);
+            resources.ApplyResources(this, "$this");
+            Name = "VideoConfig";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private GroupBox fraVideConfig;
     }
 }
