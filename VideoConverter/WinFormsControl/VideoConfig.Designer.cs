@@ -143,8 +143,8 @@
             // 
             // fraVideConfig
             // 
-            fraVideConfig.Controls.Add(spcVideoConfig);
             resources.ApplyResources(fraVideConfig, "fraVideConfig");
+            fraVideConfig.Controls.Add(spcVideoConfig);
             fraVideConfig.Name = "fraVideConfig";
             fraVideConfig.TabStop = false;
             // 

@@ -22,32 +22,22 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        VideoConfig1 = New WinFormsControl.VideoConfig()
         SplitContainer1 = New SplitContainer()
-        Label1 = New Label()
-        Label2 = New Label()
         TextBox1 = New TextBox()
+        Label1 = New Label()
         TextBox2 = New TextBox()
+        Label2 = New Label()
+        VideoConfig1 = New WinFormsControl.VideoConfig()
         CType(SplitContainer1, ComponentModel.ISupportInitialize).BeginInit()
         SplitContainer1.Panel1.SuspendLayout()
         SplitContainer1.Panel2.SuspendLayout()
         SplitContainer1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' VideoConfig1
-        ' 
-        VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        VideoConfig1.Location = New Point(27, 25)
-        VideoConfig1.MaximumSize = New Size(0, 119)
-        VideoConfig1.MinimumSize = New Size(545, 119)
-        VideoConfig1.Name = "VideoConfig1"
-        VideoConfig1.Size = New Size(545, 119)
-        VideoConfig1.TabIndex = 0
-        ' 
         ' SplitContainer1
         ' 
         SplitContainer1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        SplitContainer1.Location = New Point(36, 184)
+        SplitContainer1.Location = New Point(12, 410)
         SplitContainer1.Name = "SplitContainer1"
         ' 
         ' SplitContainer1.Panel1
@@ -61,9 +51,17 @@ Partial Class Form1
         SplitContainer1.Panel2.BackColor = Color.Red
         SplitContainer1.Panel2.Controls.Add(TextBox2)
         SplitContainer1.Panel2.Controls.Add(Label2)
-        SplitContainer1.Size = New Size(543, 135)
-        SplitContainer1.SplitterDistance = 181
+        SplitContainer1.Size = New Size(615, 135)
+        SplitContainer1.SplitterDistance = 203
         SplitContainer1.TabIndex = 1
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox1.Location = New Point(64, 15)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(126, 23)
+        TextBox1.TabIndex = 1
         ' 
         ' Label1
         ' 
@@ -75,6 +73,14 @@ Partial Class Form1
         Label1.TabIndex = 0
         Label1.Text = "Label1"
         ' 
+        ' TextBox2
+        ' 
+        TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox2.Location = New Point(62, 15)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(339, 23)
+        TextBox2.TabIndex = 1
+        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
@@ -84,29 +90,23 @@ Partial Class Form1
         Label2.TabIndex = 0
         Label2.Text = "Label2"
         ' 
-        ' TextBox1
+        ' VideoConfig1
         ' 
-        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox1.Location = New Point(64, 15)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(104, 23)
-        TextBox1.TabIndex = 1
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox2.Location = New Point(62, 15)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(289, 23)
-        TextBox2.TabIndex = 1
+        VideoConfig1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        VideoConfig1.Location = New Point(12, 12)
+        VideoConfig1.MinimumSize = New Size(532, 104)
+        VideoConfig1.Name = "VideoConfig1"
+        VideoConfig1.Size = New Size(532, 116)
+        VideoConfig1.TabIndex = 2
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(616, 570)
-        Controls.Add(SplitContainer1)
+        ClientSize = New Size(688, 583)
         Controls.Add(VideoConfig1)
+        Controls.Add(SplitContainer1)
         Name = "Form1"
         Text = "Form1"
         SplitContainer1.Panel1.ResumeLayout(False)
@@ -117,12 +117,11 @@ Partial Class Form1
         SplitContainer1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents VideoConfig1 As WinFormsControl.VideoConfig
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents VideoConfig1 As WinFormsControl.VideoConfig
 
 End Class
