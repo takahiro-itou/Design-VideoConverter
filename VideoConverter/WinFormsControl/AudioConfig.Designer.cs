@@ -210,6 +210,7 @@
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraAudioConfig);
             Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            MaximumSize = new Size(0, 104);
             MinimumSize = new Size(532, 104);
             Name = "AudioConfig";
             Size = new Size(532, 104);
