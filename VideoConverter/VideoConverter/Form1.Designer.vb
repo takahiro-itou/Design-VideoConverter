@@ -121,6 +121,7 @@ Partial Class Form1
         Controls.Add(AudioConfig1)
         Controls.Add(VideoConfig1)
         Controls.Add(SplitContainer1)
+        MinimumSize = New Size(556, 0)
         Name = "Form1"
         Text = "Form1"
         SplitContainer1.Panel1.ResumeLayout(False)
