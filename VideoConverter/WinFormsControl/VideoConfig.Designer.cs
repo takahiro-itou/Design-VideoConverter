@@ -29,61 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideoConfig));
-            fraVideConfig = new GroupBox();
-            cmbBitRate = new ComboBox();
-            lblBitRate = new Label();
-            cmbFrameRate = new ComboBox();
-            lblFrameRate = new Label();
+            spcVideoConfig = new SplitContainer();
             cmbAspect = new ComboBox();
             lblAspect = new Label();
             cmbSize = new ComboBox();
             lblSize = new Label();
-            cmbCodec = new ComboBox();
-            lblCodec = new Label();
             cmbFormat = new ComboBox();
             lblFormat = new Label();
+            cmbBitRate = new ComboBox();
+            lblBitRate = new Label();
+            cmbFrameRate = new ComboBox();
+            lblFrameRate = new Label();
+            cmbCodec = new ComboBox();
+            lblCodec = new Label();
+            fraVideConfig = new GroupBox();
+            ((System.ComponentModel.ISupportInitialize)spcVideoConfig).BeginInit();
+            spcVideoConfig.Panel1.SuspendLayout();
+            spcVideoConfig.Panel2.SuspendLayout();
+            spcVideoConfig.SuspendLayout();
             fraVideConfig.SuspendLayout();
             SuspendLayout();
             // 
-            // fraVideConfig
+            // spcVideoConfig
             // 
-            fraVideConfig.Controls.Add(cmbBitRate);
-            fraVideConfig.Controls.Add(lblBitRate);
-            fraVideConfig.Controls.Add(cmbFrameRate);
-            fraVideConfig.Controls.Add(lblFrameRate);
-            fraVideConfig.Controls.Add(cmbAspect);
-            fraVideConfig.Controls.Add(lblAspect);
-            fraVideConfig.Controls.Add(cmbSize);
-            fraVideConfig.Controls.Add(lblSize);
-            fraVideConfig.Controls.Add(cmbCodec);
-            fraVideConfig.Controls.Add(lblCodec);
-            fraVideConfig.Controls.Add(cmbFormat);
-            fraVideConfig.Controls.Add(lblFormat);
-            resources.ApplyResources(fraVideConfig, "fraVideConfig");
-            fraVideConfig.Name = "fraVideConfig";
-            fraVideConfig.TabStop = false;
+            resources.ApplyResources(spcVideoConfig, "spcVideoConfig");
+            spcVideoConfig.Name = "spcVideoConfig";
             // 
-            // cmbBitRate
+            // spcVideoConfig.Panel1
             // 
-            resources.ApplyResources(cmbBitRate, "cmbBitRate");
-            cmbBitRate.FormattingEnabled = true;
-            cmbBitRate.Name = "cmbBitRate";
+            spcVideoConfig.Panel1.Controls.Add(cmbAspect);
+            spcVideoConfig.Panel1.Controls.Add(lblAspect);
+            spcVideoConfig.Panel1.Controls.Add(cmbSize);
+            spcVideoConfig.Panel1.Controls.Add(lblSize);
+            spcVideoConfig.Panel1.Controls.Add(cmbFormat);
+            spcVideoConfig.Panel1.Controls.Add(lblFormat);
             // 
-            // lblBitRate
+            // spcVideoConfig.Panel2
             // 
-            resources.ApplyResources(lblBitRate, "lblBitRate");
-            lblBitRate.Name = "lblBitRate";
-            // 
-            // cmbFrameRate
-            // 
-            resources.ApplyResources(cmbFrameRate, "cmbFrameRate");
-            cmbFrameRate.FormattingEnabled = true;
-            cmbFrameRate.Name = "cmbFrameRate";
-            // 
-            // lblFrameRate
-            // 
-            resources.ApplyResources(lblFrameRate, "lblFrameRate");
-            lblFrameRate.Name = "lblFrameRate";
+            spcVideoConfig.Panel2.Controls.Add(cmbBitRate);
+            spcVideoConfig.Panel2.Controls.Add(lblBitRate);
+            spcVideoConfig.Panel2.Controls.Add(cmbFrameRate);
+            spcVideoConfig.Panel2.Controls.Add(lblFrameRate);
+            spcVideoConfig.Panel2.Controls.Add(cmbCodec);
+            spcVideoConfig.Panel2.Controls.Add(lblCodec);
             // 
             // cmbAspect
             // 
@@ -107,18 +95,6 @@
             resources.ApplyResources(lblSize, "lblSize");
             lblSize.Name = "lblSize";
             // 
-            // cmbCodec
-            // 
-            resources.ApplyResources(cmbCodec, "cmbCodec");
-            cmbCodec.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbCodec.FormattingEnabled = true;
-            cmbCodec.Name = "cmbCodec";
-            // 
-            // lblCodec
-            // 
-            resources.ApplyResources(lblCodec, "lblCodec");
-            lblCodec.Name = "lblCodec";
-            // 
             // cmbFormat
             // 
             resources.ApplyResources(cmbFormat, "cmbFormat");
@@ -131,30 +107,76 @@
             resources.ApplyResources(lblFormat, "lblFormat");
             lblFormat.Name = "lblFormat";
             // 
+            // cmbBitRate
+            // 
+            resources.ApplyResources(cmbBitRate, "cmbBitRate");
+            cmbBitRate.FormattingEnabled = true;
+            cmbBitRate.Name = "cmbBitRate";
+            // 
+            // lblBitRate
+            // 
+            resources.ApplyResources(lblBitRate, "lblBitRate");
+            lblBitRate.Name = "lblBitRate";
+            // 
+            // cmbFrameRate
+            // 
+            resources.ApplyResources(cmbFrameRate, "cmbFrameRate");
+            cmbFrameRate.FormattingEnabled = true;
+            cmbFrameRate.Name = "cmbFrameRate";
+            // 
+            // lblFrameRate
+            // 
+            resources.ApplyResources(lblFrameRate, "lblFrameRate");
+            lblFrameRate.Name = "lblFrameRate";
+            // 
+            // cmbCodec
+            // 
+            resources.ApplyResources(cmbCodec, "cmbCodec");
+            cmbCodec.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCodec.FormattingEnabled = true;
+            cmbCodec.Name = "cmbCodec";
+            // 
+            // lblCodec
+            // 
+            resources.ApplyResources(lblCodec, "lblCodec");
+            lblCodec.Name = "lblCodec";
+            // 
+            // fraVideConfig
+            // 
+            fraVideConfig.Controls.Add(spcVideoConfig);
+            resources.ApplyResources(fraVideConfig, "fraVideConfig");
+            fraVideConfig.Name = "fraVideConfig";
+            fraVideConfig.TabStop = false;
+            // 
             // VideoConfig
             // 
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraVideConfig);
             resources.ApplyResources(this, "$this");
             Name = "VideoConfig";
+            spcVideoConfig.Panel1.ResumeLayout(false);
+            spcVideoConfig.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)spcVideoConfig).EndInit();
+            spcVideoConfig.ResumeLayout(false);
             fraVideConfig.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox fraVideConfig;
-        private ComboBox cmbFormat;
-        private Label lblFormat;
-        private Label lblCodec;
+        private SplitContainer spcVideoConfig;
+        private ComboBox cmbAspect;
         private Label lblAspect;
         private ComboBox cmbSize;
         private Label lblSize;
-        private ComboBox cmbCodec;
-        private ComboBox cmbFrameRate;
-        private Label lblFrameRate;
-        private ComboBox cmbAspect;
+        private ComboBox cmbFormat;
+        private Label lblFormat;
         private ComboBox cmbBitRate;
         private Label lblBitRate;
+        private ComboBox cmbFrameRate;
+        private Label lblFrameRate;
+        private ComboBox cmbCodec;
+        private Label lblCodec;
+        private GroupBox fraVideConfig;
     }
 }
