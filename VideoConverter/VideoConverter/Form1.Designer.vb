@@ -28,6 +28,7 @@ Partial Class Form1
         TextBox2 = New TextBox()
         Label2 = New Label()
         VideoConfig1 = New WinFormsControl.VideoConfig()
+        AudioConfig1 = New WinFormsControl.AudioConfig()
         CType(SplitContainer1, ComponentModel.ISupportInitialize).BeginInit()
         SplitContainer1.Panel1.SuspendLayout()
         SplitContainer1.Panel2.SuspendLayout()
@@ -100,11 +101,21 @@ Partial Class Form1
         VideoConfig1.Size = New Size(532, 116)
         VideoConfig1.TabIndex = 2
         ' 
+        ' AudioConfig1
+        ' 
+        AudioConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        AudioConfig1.Location = New Point(12, 146)
+        AudioConfig1.MinimumSize = New Size(532, 104)
+        AudioConfig1.Name = "AudioConfig1"
+        AudioConfig1.Size = New Size(532, 120)
+        AudioConfig1.TabIndex = 3
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(688, 583)
+        Controls.Add(AudioConfig1)
         Controls.Add(VideoConfig1)
         Controls.Add(SplitContainer1)
         Name = "Form1"
@@ -123,5 +134,6 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents VideoConfig1 As WinFormsControl.VideoConfig
+    Friend WithEvents AudioConfig1 As WinFormsControl.AudioConfig
 
 End Class
