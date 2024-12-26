@@ -23,6 +23,15 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         VideoConfig1 = New WinFormsControl.VideoConfig()
+        SplitContainer1 = New SplitContainer()
+        Label1 = New Label()
+        Label2 = New Label()
+        TextBox1 = New TextBox()
+        TextBox2 = New TextBox()
+        CType(SplitContainer1, ComponentModel.ISupportInitialize).BeginInit()
+        SplitContainer1.Panel1.SuspendLayout()
+        SplitContainer1.Panel2.SuspendLayout()
+        SplitContainer1.SuspendLayout()
         SuspendLayout()
         ' 
         ' VideoConfig1
@@ -35,17 +44,85 @@ Partial Class Form1
         VideoConfig1.Size = New Size(545, 119)
         VideoConfig1.TabIndex = 0
         ' 
+        ' SplitContainer1
+        ' 
+        SplitContainer1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        SplitContainer1.Location = New Point(36, 184)
+        SplitContainer1.Name = "SplitContainer1"
+        ' 
+        ' SplitContainer1.Panel1
+        ' 
+        SplitContainer1.Panel1.BackColor = SystemColors.Window
+        SplitContainer1.Panel1.Controls.Add(TextBox1)
+        SplitContainer1.Panel1.Controls.Add(Label1)
+        ' 
+        ' SplitContainer1.Panel2
+        ' 
+        SplitContainer1.Panel2.BackColor = Color.Red
+        SplitContainer1.Panel2.Controls.Add(TextBox2)
+        SplitContainer1.Panel2.Controls.Add(Label2)
+        SplitContainer1.Size = New Size(543, 135)
+        SplitContainer1.SplitterDistance = 181
+        SplitContainer1.TabIndex = 1
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label1.AutoSize = True
+        Label1.Location = New Point(14, 18)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(41, 15)
+        Label1.TabIndex = 0
+        Label1.Text = "Label1"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(15, 18)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(41, 15)
+        Label2.TabIndex = 0
+        Label2.Text = "Label2"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox1.Location = New Point(64, 15)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(104, 23)
+        TextBox1.TabIndex = 1
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        TextBox2.Location = New Point(62, 15)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(289, 23)
+        TextBox2.TabIndex = 1
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 570)
+        ClientSize = New Size(616, 570)
+        Controls.Add(SplitContainer1)
         Controls.Add(VideoConfig1)
         Name = "Form1"
         Text = "Form1"
+        SplitContainer1.Panel1.ResumeLayout(False)
+        SplitContainer1.Panel1.PerformLayout()
+        SplitContainer1.Panel2.ResumeLayout(False)
+        SplitContainer1.Panel2.PerformLayout()
+        CType(SplitContainer1, ComponentModel.ISupportInitialize).EndInit()
+        SplitContainer1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents VideoConfig1 As WinFormsControl.VideoConfig
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label2 As Label
 
 End Class

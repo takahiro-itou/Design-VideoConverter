@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmbBitRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 81</value>
+    <value>352, 72</value>
   </data>
   <data name="cmbBitRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -151,10 +151,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblBitRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 88</value>
+    <value>264, 72</value>
   </data>
   <data name="lblBitRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
+    <value>80, 20</value>
   </data>
   <data name="lblBitRate.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -181,7 +181,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbFrameRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 55</value>
+    <value>352, 44</value>
   </data>
   <data name="cmbFrameRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -208,10 +208,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblFrameRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 56</value>
+    <value>264, 44</value>
   </data>
   <data name="lblFrameRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
+    <value>80, 20</value>
   </data>
   <data name="lblFrameRate.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -343,10 +343,10 @@
     <value>7</value>
   </data>
   <data name="cmbCodec.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+    <value>Top, Bottom</value>
   </data>
   <data name="cmbCodec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 24</value>
+    <value>352, 16</value>
   </data>
   <data name="cmbCodec.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -373,10 +373,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblCodec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 27</value>
+    <value>264, 16</value>
   </data>
   <data name="lblCodec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
+    <value>80, 20</value>
   </data>
   <data name="lblCodec.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -449,9 +449,6 @@
   </data>
   <data name="&gt;&gt;lblFormat.ZOrder" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="fraVideConfig.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="fraVideConfig.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
