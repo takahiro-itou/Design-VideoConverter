@@ -95,7 +95,7 @@ Partial Class Form1
         ' 
         VideoConfig1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        VideoConfig1.Location = New Point(0, 0)
+        VideoConfig1.Location = New Point(12, 12)
         VideoConfig1.MaximumSize = New Size(0, 104)
         VideoConfig1.MinimumSize = New Size(532, 104)
         VideoConfig1.Name = "VideoConfig1"
@@ -106,7 +106,7 @@ Partial Class Form1
         ' 
         AudioConfig1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         AudioConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        AudioConfig1.Location = New Point(0, 125)
+        AudioConfig1.Location = New Point(13, 137)
         AudioConfig1.MaximumSize = New Size(0, 104)
         AudioConfig1.MinimumSize = New Size(532, 104)
         AudioConfig1.Name = "AudioConfig1"
