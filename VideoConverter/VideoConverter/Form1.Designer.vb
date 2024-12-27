@@ -52,8 +52,8 @@ Partial Class Form1
         SplitContainer1.Panel2.BackColor = Color.Red
         SplitContainer1.Panel2.Controls.Add(TextBox2)
         SplitContainer1.Panel2.Controls.Add(Label2)
-        SplitContainer1.Size = New Size(615, 135)
-        SplitContainer1.SplitterDistance = 203
+        SplitContainer1.Size = New Size(487, 135)
+        SplitContainer1.SplitterDistance = 160
         SplitContainer1.TabIndex = 1
         ' 
         ' TextBox1
@@ -61,7 +61,7 @@ Partial Class Form1
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox1.Location = New Point(64, 15)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(126, 23)
+        TextBox1.Size = New Size(83, 23)
         TextBox1.TabIndex = 1
         ' 
         ' Label1
@@ -79,7 +79,7 @@ Partial Class Form1
         TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox2.Location = New Point(62, 15)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(339, 23)
+        TextBox2.Size = New Size(254, 23)
         TextBox2.TabIndex = 1
         ' 
         ' Label2
@@ -110,18 +110,18 @@ Partial Class Form1
         AudioConfig1.MaximumSize = New Size(0, 104)
         AudioConfig1.MinimumSize = New Size(532, 104)
         AudioConfig1.Name = "AudioConfig1"
-        AudioConfig1.Size = New Size(614, 104)
+        AudioConfig1.Size = New Size(532, 104)
         AudioConfig1.TabIndex = 3
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(688, 583)
+        ClientSize = New Size(560, 583)
         Controls.Add(AudioConfig1)
         Controls.Add(VideoConfig1)
         Controls.Add(SplitContainer1)
-        MinimumSize = New Size(556, 0)
+        MinimumSize = New Size(576, 0)
         Name = "Form1"
         Text = "Form1"
         SplitContainer1.Panel1.ResumeLayout(False)
