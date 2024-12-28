@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         SplitContainer1 = New SplitContainer()
         TextBox1 = New TextBox()
         Label1 = New Label()
@@ -37,8 +38,7 @@ Partial Class Form1
         ' 
         ' SplitContainer1
         ' 
-        SplitContainer1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        SplitContainer1.Location = New Point(12, 410)
+        resources.ApplyResources(SplitContainer1, "SplitContainer1")
         SplitContainer1.Name = "SplitContainer1"
         ' 
         ' SplitContainer1.Panel1
@@ -52,78 +52,45 @@ Partial Class Form1
         SplitContainer1.Panel2.BackColor = Color.Red
         SplitContainer1.Panel2.Controls.Add(TextBox2)
         SplitContainer1.Panel2.Controls.Add(Label2)
-        SplitContainer1.Size = New Size(487, 135)
-        SplitContainer1.SplitterDistance = 160
-        SplitContainer1.TabIndex = 1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox1.Location = New Point(64, 15)
+        resources.ApplyResources(TextBox1, "TextBox1")
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(83, 23)
-        TextBox1.TabIndex = 1
         ' 
         ' Label1
         ' 
-        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        Label1.AutoSize = True
-        Label1.Location = New Point(14, 18)
+        resources.ApplyResources(Label1, "Label1")
         Label1.Name = "Label1"
-        Label1.Size = New Size(41, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Label1"
         ' 
         ' TextBox2
         ' 
-        TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox2.Location = New Point(62, 15)
+        resources.ApplyResources(TextBox2, "TextBox2")
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(254, 23)
-        TextBox2.TabIndex = 1
         ' 
         ' Label2
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(15, 18)
+        resources.ApplyResources(Label2, "Label2")
         Label2.Name = "Label2"
-        Label2.Size = New Size(41, 15)
-        Label2.TabIndex = 0
-        Label2.Text = "Label2"
         ' 
         ' VideoConfig1
         ' 
-        VideoConfig1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        VideoConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        VideoConfig1.Location = New Point(12, 12)
-        VideoConfig1.MaximumSize = New Size(0, 104)
-        VideoConfig1.MinimumSize = New Size(532, 104)
+        resources.ApplyResources(VideoConfig1, "VideoConfig1")
         VideoConfig1.Name = "VideoConfig1"
-        VideoConfig1.Size = New Size(532, 104)
-        VideoConfig1.TabIndex = 2
         ' 
         ' AudioConfig1
         ' 
-        AudioConfig1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        AudioConfig1.Font = New Font("ＭＳ ゴシック", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        AudioConfig1.Location = New Point(13, 137)
-        AudioConfig1.MaximumSize = New Size(0, 104)
-        AudioConfig1.MinimumSize = New Size(532, 104)
+        resources.ApplyResources(AudioConfig1, "AudioConfig1")
         AudioConfig1.Name = "AudioConfig1"
-        AudioConfig1.Size = New Size(532, 104)
-        AudioConfig1.TabIndex = 3
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(560, 583)
         Controls.Add(AudioConfig1)
         Controls.Add(VideoConfig1)
         Controls.Add(SplitContainer1)
-        MinimumSize = New Size(576, 0)
         Name = "Form1"
-        Text = "Form1"
         SplitContainer1.Panel1.ResumeLayout(False)
         SplitContainer1.Panel1.PerformLayout()
         SplitContainer1.Panel2.ResumeLayout(False)

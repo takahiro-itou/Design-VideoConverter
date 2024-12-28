@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AudioConfig));
             fraAudioConfig = new GroupBox();
             spcAudioConfig = new SplitContainer();
             cmbAudioDelay = new ComboBox();
@@ -51,19 +52,14 @@
             // 
             // fraAudioConfig
             // 
-            fraAudioConfig.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(fraAudioConfig, "fraAudioConfig");
             fraAudioConfig.Controls.Add(spcAudioConfig);
-            fraAudioConfig.Location = new Point(0, 0);
             fraAudioConfig.Name = "fraAudioConfig";
-            fraAudioConfig.Size = new Size(532, 104);
-            fraAudioConfig.TabIndex = 0;
             fraAudioConfig.TabStop = false;
-            fraAudioConfig.Text = "&Audio Config";
             // 
             // spcAudioConfig
             // 
-            spcAudioConfig.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            spcAudioConfig.Location = new Point(8, 16);
+            resources.ApplyResources(spcAudioConfig, "spcAudioConfig");
             spcAudioConfig.Name = "spcAudioConfig";
             // 
             // spcAudioConfig.Panel1
@@ -74,7 +70,6 @@
             spcAudioConfig.Panel1.Controls.Add(lblVolume);
             spcAudioConfig.Panel1.Controls.Add(cmbChannels);
             spcAudioConfig.Panel1.Controls.Add(lblChannel);
-            spcAudioConfig.Panel1MinSize = 256;
             // 
             // spcAudioConfig.Panel2
             // 
@@ -84,136 +79,81 @@
             spcAudioConfig.Panel2.Controls.Add(lblSampleRate);
             spcAudioConfig.Panel2.Controls.Add(cmbCodec);
             spcAudioConfig.Panel2.Controls.Add(lblCodec);
-            spcAudioConfig.Panel2MinSize = 256;
-            spcAudioConfig.Size = new Size(516, 78);
-            spcAudioConfig.SplitterDistance = 256;
-            spcAudioConfig.TabIndex = 0;
             // 
             // cmbAudioDelay
             // 
-            cmbAudioDelay.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbAudioDelay, "cmbAudioDelay");
             cmbAudioDelay.FormattingEnabled = true;
-            cmbAudioDelay.Location = new Point(88, 56);
             cmbAudioDelay.Name = "cmbAudioDelay";
-            cmbAudioDelay.Size = new Size(160, 20);
-            cmbAudioDelay.TabIndex = 19;
             // 
             // lblDelay
             // 
-            lblDelay.ImeMode = ImeMode.NoControl;
-            lblDelay.Location = new Point(4, 56);
+            resources.ApplyResources(lblDelay, "lblDelay");
             lblDelay.Name = "lblDelay";
-            lblDelay.Size = new Size(80, 20);
-            lblDelay.TabIndex = 18;
-            lblDelay.Text = "Delay Corr.";
-            lblDelay.TextAlign = ContentAlignment.MiddleRight;
             // 
             // cmbVolume
             // 
-            cmbVolume.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbVolume, "cmbVolume");
             cmbVolume.FormattingEnabled = true;
-            cmbVolume.Location = new Point(88, 28);
             cmbVolume.Name = "cmbVolume";
-            cmbVolume.Size = new Size(160, 20);
-            cmbVolume.TabIndex = 17;
             // 
             // lblVolume
             // 
-            lblVolume.ImeMode = ImeMode.NoControl;
-            lblVolume.Location = new Point(4, 28);
+            resources.ApplyResources(lblVolume, "lblVolume");
             lblVolume.Name = "lblVolume";
-            lblVolume.Size = new Size(80, 20);
-            lblVolume.TabIndex = 16;
-            lblVolume.Text = "Volume:";
-            lblVolume.TextAlign = ContentAlignment.MiddleRight;
             // 
             // cmbChannels
             // 
-            cmbChannels.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbChannels, "cmbChannels");
             cmbChannels.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbChannels.FormattingEnabled = true;
-            cmbChannels.Location = new Point(88, 0);
             cmbChannels.Name = "cmbChannels";
-            cmbChannels.Size = new Size(160, 20);
-            cmbChannels.TabIndex = 15;
             // 
             // lblChannel
             // 
-            lblChannel.ImeMode = ImeMode.NoControl;
-            lblChannel.Location = new Point(4, 0);
+            resources.ApplyResources(lblChannel, "lblChannel");
             lblChannel.Name = "lblChannel";
-            lblChannel.Size = new Size(80, 20);
-            lblChannel.TabIndex = 14;
-            lblChannel.Text = "Channels";
-            lblChannel.TextAlign = ContentAlignment.MiddleRight;
             // 
             // cmbBitRate
             // 
-            cmbBitRate.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbBitRate, "cmbBitRate");
             cmbBitRate.FormattingEnabled = true;
-            cmbBitRate.Location = new Point(88, 56);
             cmbBitRate.Name = "cmbBitRate";
-            cmbBitRate.Size = new Size(160, 20);
-            cmbBitRate.TabIndex = 23;
             // 
             // lblBitRate
             // 
-            lblBitRate.ImeMode = ImeMode.NoControl;
-            lblBitRate.Location = new Point(4, 56);
+            resources.ApplyResources(lblBitRate, "lblBitRate");
             lblBitRate.Name = "lblBitRate";
-            lblBitRate.Size = new Size(80, 20);
-            lblBitRate.TabIndex = 22;
-            lblBitRate.Text = "Bit Rate:";
-            lblBitRate.TextAlign = ContentAlignment.MiddleRight;
             // 
             // cmbSampleRate
             // 
-            cmbSampleRate.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbSampleRate, "cmbSampleRate");
             cmbSampleRate.FormattingEnabled = true;
-            cmbSampleRate.Location = new Point(88, 28);
             cmbSampleRate.Name = "cmbSampleRate";
-            cmbSampleRate.Size = new Size(160, 20);
-            cmbSampleRate.TabIndex = 21;
             // 
             // lblSampleRate
             // 
-            lblSampleRate.ImeMode = ImeMode.NoControl;
-            lblSampleRate.Location = new Point(4, 28);
+            resources.ApplyResources(lblSampleRate, "lblSampleRate");
             lblSampleRate.Name = "lblSampleRate";
-            lblSampleRate.Size = new Size(80, 20);
-            lblSampleRate.TabIndex = 20;
-            lblSampleRate.Text = "Sample Rate:";
-            lblSampleRate.TextAlign = ContentAlignment.MiddleRight;
             // 
             // cmbCodec
             // 
-            cmbCodec.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(cmbCodec, "cmbCodec");
             cmbCodec.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCodec.FormattingEnabled = true;
-            cmbCodec.Location = new Point(88, 0);
             cmbCodec.Name = "cmbCodec";
-            cmbCodec.Size = new Size(160, 20);
-            cmbCodec.TabIndex = 19;
             // 
             // lblCodec
             // 
-            lblCodec.ImeMode = ImeMode.NoControl;
-            lblCodec.Location = new Point(4, 0);
+            resources.ApplyResources(lblCodec, "lblCodec");
             lblCodec.Name = "lblCodec";
-            lblCodec.Size = new Size(80, 20);
-            lblCodec.TabIndex = 18;
-            lblCodec.Text = "Codec:";
-            lblCodec.TextAlign = ContentAlignment.MiddleRight;
             // 
             // AudioConfig
             // 
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraAudioConfig);
-            Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            MaximumSize = new Size(0, 104);
-            MinimumSize = new Size(532, 104);
+            resources.ApplyResources(this, "$this");
             Name = "AudioConfig";
-            Size = new Size(532, 104);
             fraAudioConfig.ResumeLayout(false);
             spcAudioConfig.Panel1.ResumeLayout(false);
             spcAudioConfig.Panel2.ResumeLayout(false);
