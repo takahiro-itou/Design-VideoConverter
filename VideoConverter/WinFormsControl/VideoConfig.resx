@@ -129,7 +129,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbAspect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 56</value>
+    <value>104, 56</value>
   </data>
   <data name="cmbAspect.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -157,7 +157,7 @@
     <value>4, 56</value>
   </data>
   <data name="lblAspect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblAspect.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -184,7 +184,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 28</value>
+    <value>104, 28</value>
   </data>
   <data name="cmbSize.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -211,7 +211,7 @@
     <value>4, 28</value>
   </data>
   <data name="lblSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblSize.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -238,7 +238,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbFormat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 0</value>
+    <value>104, 0</value>
   </data>
   <data name="cmbFormat.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -265,7 +265,7 @@
     <value>4, 0</value>
   </data>
   <data name="lblFormat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblFormat.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -301,13 +301,13 @@
     <value>0</value>
   </data>
   <data name="spcVideoConfig.Panel1MinSize" type="System.Int32, mscorlib">
-    <value>256</value>
+    <value>272</value>
   </data>
   <data name="cmbBitRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbBitRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 56</value>
+    <value>104, 56</value>
   </data>
   <data name="cmbBitRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -334,7 +334,7 @@
     <value>4, 56</value>
   </data>
   <data name="lblBitRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblBitRate.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -361,7 +361,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbFrameRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 28</value>
+    <value>104, 28</value>
   </data>
   <data name="cmbFrameRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -388,7 +388,7 @@
     <value>4, 28</value>
   </data>
   <data name="lblFrameRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblFrameRate.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -415,7 +415,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="cmbCodec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 0</value>
+    <value>104, 0</value>
   </data>
   <data name="cmbCodec.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 20</value>
@@ -442,7 +442,7 @@
     <value>4, 0</value>
   </data>
   <data name="lblCodec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>96, 20</value>
   </data>
   <data name="lblCodec.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -478,13 +478,13 @@
     <value>1</value>
   </data>
   <data name="spcVideoConfig.Panel2MinSize" type="System.Int32, mscorlib">
-    <value>256</value>
+    <value>272</value>
   </data>
   <data name="spcVideoConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 78</value>
+    <value>548, 78</value>
   </data>
   <data name="spcVideoConfig.SplitterDistance" type="System.Int32, mscorlib">
-    <value>256</value>
+    <value>272</value>
   </data>
   <data name="spcVideoConfig.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -508,7 +508,7 @@
     <value>0, 0</value>
   </data>
   <data name="fraVideConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 104</value>
+    <value>564, 104</value>
   </data>
   <data name="fraVideConfig.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -538,10 +538,10 @@
     <value>0, 104</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>532, 104</value>
+    <value>564, 104</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 104</value>
+    <value>564, 104</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>VideoConfig</value>
