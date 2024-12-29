@@ -57,6 +57,7 @@
             // 
             // spcVideoConfig.Panel1
             // 
+            resources.ApplyResources(spcVideoConfig.Panel1, "spcVideoConfig.Panel1");
             spcVideoConfig.Panel1.Controls.Add(cmbAspect);
             spcVideoConfig.Panel1.Controls.Add(lblAspect);
             spcVideoConfig.Panel1.Controls.Add(cmbSize);
@@ -66,6 +67,7 @@
             // 
             // spcVideoConfig.Panel2
             // 
+            resources.ApplyResources(spcVideoConfig.Panel2, "spcVideoConfig.Panel2");
             spcVideoConfig.Panel2.Controls.Add(cmbBitRate);
             spcVideoConfig.Panel2.Controls.Add(lblBitRate);
             spcVideoConfig.Panel2.Controls.Add(cmbFrameRate);
@@ -150,9 +152,9 @@
             // 
             // VideoConfig
             // 
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraVideConfig);
-            resources.ApplyResources(this, "$this");
             Name = "VideoConfig";
             spcVideoConfig.Panel1.ResumeLayout(false);
             spcVideoConfig.Panel2.ResumeLayout(false);
