@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AudioConfig));
-            fraAudioConfig = new GroupBox();
             spcAudioConfig = new SplitContainer();
             cmbAudioDelay = new ComboBox();
             lblDelay = new Label();
@@ -43,19 +42,13 @@
             lblSampleRate = new Label();
             cmbCodec = new ComboBox();
             lblCodec = new Label();
-            fraAudioConfig.SuspendLayout();
+            fraAudioConfig = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)spcAudioConfig).BeginInit();
             spcAudioConfig.Panel1.SuspendLayout();
             spcAudioConfig.Panel2.SuspendLayout();
             spcAudioConfig.SuspendLayout();
+            fraAudioConfig.SuspendLayout();
             SuspendLayout();
-            // 
-            // fraAudioConfig
-            // 
-            resources.ApplyResources(fraAudioConfig, "fraAudioConfig");
-            fraAudioConfig.Controls.Add(spcAudioConfig);
-            fraAudioConfig.Name = "fraAudioConfig";
-            fraAudioConfig.TabStop = false;
             // 
             // spcAudioConfig
             // 
@@ -64,7 +57,6 @@
             // 
             // spcAudioConfig.Panel1
             // 
-            resources.ApplyResources(spcAudioConfig.Panel1, "spcAudioConfig.Panel1");
             spcAudioConfig.Panel1.Controls.Add(cmbAudioDelay);
             spcAudioConfig.Panel1.Controls.Add(lblDelay);
             spcAudioConfig.Panel1.Controls.Add(cmbVolume);
@@ -74,7 +66,6 @@
             // 
             // spcAudioConfig.Panel2
             // 
-            resources.ApplyResources(spcAudioConfig.Panel2, "spcAudioConfig.Panel2");
             spcAudioConfig.Panel2.Controls.Add(cmbBitRate);
             spcAudioConfig.Panel2.Controls.Add(lblBitRate);
             spcAudioConfig.Panel2.Controls.Add(cmbSampleRate);
@@ -150,17 +141,24 @@
             resources.ApplyResources(lblCodec, "lblCodec");
             lblCodec.Name = "lblCodec";
             // 
+            // fraAudioConfig
+            // 
+            resources.ApplyResources(fraAudioConfig, "fraAudioConfig");
+            fraAudioConfig.Controls.Add(spcAudioConfig);
+            fraAudioConfig.Name = "fraAudioConfig";
+            fraAudioConfig.TabStop = false;
+            // 
             // AudioConfig
             // 
-            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraAudioConfig);
+            resources.ApplyResources(this, "$this");
             Name = "AudioConfig";
-            fraAudioConfig.ResumeLayout(false);
             spcAudioConfig.Panel1.ResumeLayout(false);
             spcAudioConfig.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)spcAudioConfig).EndInit();
             spcAudioConfig.ResumeLayout(false);
+            fraAudioConfig.ResumeLayout(false);
             ResumeLayout(false);
         }
 
