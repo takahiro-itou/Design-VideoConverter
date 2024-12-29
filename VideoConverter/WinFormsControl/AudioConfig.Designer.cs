@@ -64,6 +64,7 @@
             // 
             // spcAudioConfig.Panel1
             // 
+            resources.ApplyResources(spcAudioConfig.Panel1, "spcAudioConfig.Panel1");
             spcAudioConfig.Panel1.Controls.Add(cmbAudioDelay);
             spcAudioConfig.Panel1.Controls.Add(lblDelay);
             spcAudioConfig.Panel1.Controls.Add(cmbVolume);
@@ -73,6 +74,7 @@
             // 
             // spcAudioConfig.Panel2
             // 
+            resources.ApplyResources(spcAudioConfig.Panel2, "spcAudioConfig.Panel2");
             spcAudioConfig.Panel2.Controls.Add(cmbBitRate);
             spcAudioConfig.Panel2.Controls.Add(lblBitRate);
             spcAudioConfig.Panel2.Controls.Add(cmbSampleRate);
@@ -150,9 +152,9 @@
             // 
             // AudioConfig
             // 
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.None;
             Controls.Add(fraAudioConfig);
-            resources.ApplyResources(this, "$this");
             Name = "AudioConfig";
             fraAudioConfig.ResumeLayout(false);
             spcAudioConfig.Panel1.ResumeLayout(false);
